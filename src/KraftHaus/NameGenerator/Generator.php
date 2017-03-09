@@ -15,7 +15,6 @@ use Illuminate\Config\Repository;
 
 class Generator
 {
-
     /**
      * @var Repository
      */
@@ -48,10 +47,10 @@ class Generator
         $raw = [];
 
         for ($i = 1; $i < $words; $i++) {
-            $raw[] = $adjectives[rand(0, sizeof($adjectives) -1)];
+            $raw[] = $adjectives[rand(0, count($adjectives) - 1)];
         }
 
-        $raw[] = $nouns[rand(0, sizeof($nouns) -1)];
+        $raw[] = $nouns[rand(0, count($nouns) - 1)];
 
         return $raw;
     }

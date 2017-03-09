@@ -15,26 +15,25 @@ use KraftHaus\NameGenerator\NameGeneratorServiceProvider;
 
 class NameGeneratorTest extends TestCase
 {
-
     protected function getPackageProviders($app)
     {
         return [NameGeneratorServiceProvider::class];
     }
 
     /** @test */
-    function that_raw_outputs_an_array()
+    public function that_raw_outputs_an_array()
     {
         $this->assertInternalType('array', Generator::raw());
     }
 
     /** @test */
-    function that_generate_outputs_a_string()
+    public function that_generate_outputs_a_string()
     {
         $this->assertInternalType('string', Generator::generate());
     }
 
     /** @test */
-    function that_raw_outputs_the_right_amount_of_words()
+    public function that_raw_outputs_the_right_amount_of_words()
     {
         $this->assertCount(2, Generator::raw());
         $this->assertCount(3, Generator::raw(3));
@@ -45,7 +44,7 @@ class NameGeneratorTest extends TestCase
     }
 
     /** @test */
-    function that_generate_ouputs_the_right_amount_of_words()
+    public function that_generate_ouputs_the_right_amount_of_words()
     {
         $this->assertCount(2, explode(' ', Generator::generate(2)));
         $this->assertCount(3, explode(' ', Generator::generate(3)));
@@ -56,7 +55,7 @@ class NameGeneratorTest extends TestCase
     }
 
     /** @test */
-    function that_glue_works_on_generate()
+    public function that_glue_works_on_generate()
     {
         $this->assertRegExp('/[a-z]+-[a-z]+/', Generator::generate(2, '-'));
         $this->assertRegExp('/[a-z]+\_[a-z]+/', Generator::generate(2, '_'));

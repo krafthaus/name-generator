@@ -15,7 +15,6 @@ use Illuminate\Support\ServiceProvider;
 
 class NameGeneratorServiceProvider extends ServiceProvider
 {
-
     /**
      * Boot the service provider.
      */
@@ -23,7 +22,7 @@ class NameGeneratorServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../../config/adjectives.php' => config_path('name-generator/adjectives.php'),
-            __DIR__.'/../../config/nouns.php' => config_path('name-generator/nouns.php')
+            __DIR__.'/../../config/nouns.php' => config_path('name-generator/nouns.php'),
         ], 'config');
     }
 
