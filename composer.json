@@ -1,0 +1,24 @@
+{
+  "name": "krafthaus/name-generator",
+  "description": "Name generator for your next Laravel project.",
+  "keywords": ["generator", "name", "laravel"],
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Jelle Spekken",
+      "email": "jspekken@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8|^5.0",
+    "orchestra/testbench": "~3.0"
+  },
+  "autoload": {
+    "psr-4": { "KraftHaus\\NameGenerator\\": "src/KraftHaus/NameGenerator" }
+  },
+  "minimum-stability": "dev"
+}
