@@ -3,6 +3,7 @@
 [![Total Downloads](https://poser.pugx.org/krafthaus/name-generator/downloads.png)](https://packagist.org/packages/krafthaus/name-generator)
 [![Build Status](https://img.shields.io/travis/krafthaus/name-generator/master.svg?style=flat-square)](https://travis-ci.org/krafthaus/name-generator)
 [![License](https://poser.pugx.org/krafthaus/name-generator/license.png)](https://packagist.org/packages/krafthaus/name-generator)
+[![StyleCI](https://styleci.io/repos/84430527/shield)](https://styleci.io/repos/84430527)
 
 ## Installation
 
