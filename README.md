@@ -41,21 +41,26 @@ $ php artisan vendor:publish --provider="KraftHaus\NameGenerator\NameGeneratorSe
 
 ```php
 $words = KraftHaus\NameGenerator\Facades\Generator::generate();
+// output: word1 word2
 
 // Or define the amount of words you'd like to output:
 $words = KraftHaus\NameGenerator\Facades\Generator::generate(5);
+// output: word1 word2 word3 word4 word5
 
 // With the glue parameter:
-$words = KraftHaus\NameGenerator\Facades\Generator::generate(5, '-');
+$words = KraftHaus\NameGenerator\Facades\Generator::generate(3, '-');
+// output: word1-word2-word3
 ```
 
 #### Generate an array of random words:
 
 ```php
 $words = KraftHaus\NameGenerator\Facades\Generator::raw();
+// output: ['word1', 'word2'];
 
 // Or define the amount of words you'd like to output:
-$words = KraftHaus\NameGenerator\Facades\Generator::raw(5);
+$words = KraftHaus\NameGenerator\Facades\Generator::raw(4);
+// output: ['word1', 'word2', 'word3', 'word4'];
 ```
 
 ## License
